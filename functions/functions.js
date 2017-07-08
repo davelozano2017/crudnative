@@ -96,6 +96,7 @@ function del($id) {
 		success:function(response) {
 			if($('#id').val() == id) {
 				$('#id').val('');
+				$('#addorupdate').html('Save');
 			}
 			switch(response.notification) {
 				case 'success':

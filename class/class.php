@@ -1,10 +1,19 @@
 <?php
 class db {
 
-    public function __construct($db) {
-        $this->db = $db;
+    public $host  = 'localhost';
+    public $user  = 'root';
+    public $pass  = '';
+    public $dbase = 'crudnative';
+    public $db;
+
+    public function __construct() {
+         $this->connection();
     }
 
+    public function connection() {
+        $this->db = new mysqli($this->host,$this->user,$this->pass,$this->dbase);
+    }
     //Insert Data
     public function insertupdate($id,$lastname,$firstname,$middlename) {
         $fields = implode(',',array('lastname','firstname','middlename'));
@@ -70,6 +79,5 @@ class db {
     public function success() {
       echo json_encode(array('notification' => 'success'));
     }
-
 
 }

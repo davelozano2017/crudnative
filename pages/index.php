@@ -24,17 +24,17 @@
           <div class="form-group">
             <input type="hidden" id="id" name="id">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname">
+            <input type="text" class="form-control" id="lastname" name="lastname" required>
           </div>
 
           <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname">
+            <input type="text" class="form-control" id="firstname" name="firstname" required>
           </div>
 
           <div class="form-group">
             <label for="middlename">Middle Name</label>
-            <input type="text" class="form-control" id="middlename" name="middlename">
+            <input type="text" class="form-control" id="middlename" name="middlename" required>
           </div>
 
           <div class="form-group">
